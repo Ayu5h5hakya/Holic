@@ -8,23 +8,23 @@ import androidx.navigation.compose.composable
 
 @Composable
 fun HolicGraph(navController: NavHostController) {
-    NavHost(navController, startDestination = RouteGraph.HOME) {
-        composable(RouteGraph.HOME) {
+    NavHost(navController, startDestination = Route.HOME) {
+        composable(Route.HOME) {
             Text("home")
         }
-        composable(RouteGraph.CATEGORIES) {
+        composable(Route.CATEGORIES) {
             Text("categories")
         }
-        composable(RouteGraph.DEALS) {
+        composable(Route.DEALS) {
             Text("deals")
         }
-        composable(RouteGraph.SETTINGS) {
+        composable(Route.SETTINGS) {
             Text("settings")
         }
     }
 }
 
-object RouteGraph {
+object Route {
     const val HOME = "home"
     const val CATEGORIES = "categories"
     const val DEALS = "deals_offers"
